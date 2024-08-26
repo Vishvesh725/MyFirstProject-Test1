@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Full Stack Tasks</h1>
+
+
+    <section id="mic-to-text">
+        <h2>Mic to Text</h2>
+        <button onclick="startMicToText()">Start Speaking</button>
+        <p id="speech-output"></p>
+    </section>
+
+    <section id="camera-click">
+        <h2>Camera Click</h2>
+        <video id="video" width="640" height="480" autoplay></video>
+        <button onclick="clickPhoto()">Click Photo</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </section>
+
+    <section id="livestream">
+        <h2>Live Stream</h2>
+        <video id="livestream-video" autoplay></video>
+    </section>
+
+    <section id="recordAndPost">
+        <h2>Record</h2>
+        <video id="video" width="640" height="480" autoplay></video>
+        <button onclick="post()">Post video</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </section>
+    
+    <section id="searchEngine">
+        <h2>Search</h2>
+        <button onclick="search()">Start Searching</button>
+        <p id="search-output"></p>
+    </section>
+
+    <script src="scripts/micToText.js"></script>
+    <script src="scripts/camera.js"></script>
+    <script src="scripts/livestream.js"></script>
+    <script src="scripts/recordAndPost.js"></script>
+    <script src="scripts/searchEngine.js"></script>
+    <script src="scripts/chatgptMic.js"></script>
+    <script src="scripts/dockerMetrics.js"></script>
+    
+</body>
+</html>
